@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Markdown Slides</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Markdown Slides</h1>
+  <span id="status"></span>
+  <button id="newBtn">New</button>
+  <button id="saveBtn" class="primary">Save (Ctrl+S)</button>
+  <button id="presentBtn">Present</button>
+</header>
+<main>
+  <section>
+    <h2>Markdown editor</h2>
+    <textarea id="editor" spellcheck="false" aria-label="Markdown editor"></textarea>
+  </section>
+  <section>
+    <h2>Live preview</h2>
+    <div id="pane">
+      <div id="stageWrap"><div id="slide"></div></div>
+      <div id="controls">
+        <button id="prev" aria-label="Previous slide">◀ Left</button>
+        <span id="count">1 / 1</span>
+        <button id="next" aria-label="Next slide">Right ▶</button>
+        <button id="fs">⛶ Full Screen</button>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
